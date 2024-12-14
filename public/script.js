@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             statusDiv.innerText = `${result.host} is ${result.alive ? 'online' : 'offline'}`;
             statusDiv.className = `status ${result.alive ? 'online' : 'offline'}`;
         } catch (error) {
-            statusDiv.innerText = `Error checking ${ip}`;
+            statusDiv.innerText = `Error checking ${ip}: ${error.message}`;
             statusDiv.className = 'status offline';
         }
-    }
+    } 
 });
