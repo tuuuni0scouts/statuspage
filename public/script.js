@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    const ips = ['8.8.8.8', '8.8.4.4']; // Add more IPs as needed
+    const ips = ['8.8.8.8', '185.178.193.172']; // Add more IPs as needed
     const statusContainer = document.getElementById('status-container');
 
     for (const ip of ips) {
